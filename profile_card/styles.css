@@ -1,0 +1,153 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(206, 199, 199);
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    max-width: 370px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 24px 24px 0 0;
+}
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #463f05;
+}
+
+.text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job {
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .media-button{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media-button .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 0 8px;
+    background-color: beige;
+    text-decoration: none;
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons .button{
+    color: #fff;
+    background-color: #4070f4;
+    padding: 8px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 24px;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.buttons .button:hover{
+    background-color: #fff;
+    color: #4070f4;
+    border: 1px solid;
+}
+
+.media-button .link:hover{
+    height: 35px;
+    width: 35px;
+    background: #fff;
+    color: rgb(8, 10, 10);
+
+}
+
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    color: #312626;
+    margin: 0 ;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border: 2px solid #e7e7e7;
+    border-top: none;
+    border-bottom: none;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data .nmber{
+    margin: 0;
+    color: #4070f4;
+}
+.data:last-child{
+    border-right: none;
+}
+.data:first-child{
+    border-left: none;
+}
