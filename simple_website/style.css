@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    background: #1b1b1b;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+}
+nav .menu{
+    max-width: 1250px;
+    backgrond: red;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 35px;
+    font-weight: 700px;
+}
+nav .logo a:hover{
+    background: #ffff;
+    color: #000;
+    padding: 0 15px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+nav ul{
+    display: inline-flex;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 8px;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+.menu ul li a:hover{
+    background: #ffff;
+    color: #000;
+}
+.img{
+    background: url(images/layout.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.center{
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: center;
+}
+.center .title{
+    color: #ffff;
+    font-size: 50px;
+    font-weight: 600;
+}
+.center .title2{
+    color: #ffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+.center .btns{
+    margin: 35px;
+}
+.center .btns button{
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 15px;
+    border: 2px solid #fff;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.7s ease;
+}
+.center .btns button:first-child{
+    background: none;
+    color: #fff;
+}
+.center .btns button:first-child:hover{
+    background: #fff;
+    color: #000;
+}
+.center .btns button:last-child:hover{
+    background: none;
+    color: #fff;
+}
