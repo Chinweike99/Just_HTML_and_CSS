@@ -1,0 +1,1 @@
+This is a simple search bar that increases or decrease in size when search icon is clicked on.
