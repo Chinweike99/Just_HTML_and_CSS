@@ -107,7 +107,6 @@ nav .navbar{
     white-space: nowrap;
     overflow: hidden;
     animation: typing 8s steps(15) infinite ;
-    backgound: red;
     border-right: 4px solid #192e2c;
 }
 @keyframes typing{
