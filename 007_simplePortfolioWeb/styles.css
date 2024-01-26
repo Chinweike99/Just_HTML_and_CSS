@@ -106,7 +106,7 @@ nav .navbar{
     margin-left: 10px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 8s steps(15) infinite ;
+    animation: typing 8s steps(15) infinite ;   
     border-right: 4px solid #192e2c;
 }
 @keyframes typing{
